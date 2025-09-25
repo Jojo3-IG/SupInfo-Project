@@ -210,14 +210,14 @@ h3{
     box-shadow: 0 3px 6px  rgba(0,0,0,0.16);
 }
 
-img{
+.product_picture{
     width: 300px;
     height:300px;
     text-align: center;
     
 }
 
-p{
+.discription{
     text-align: center;
     color: rgb(158, 158, 154);
 }
@@ -245,4 +245,14 @@ li{
 
 .checked{
     color: gold;
+}
+
+
+/* ***************Error*************/
+.Error{
+    border: #000000 ;
+    background-color: #000000;
+    display: flex;
+    text-align: center;
+    justify-content:end
 }
