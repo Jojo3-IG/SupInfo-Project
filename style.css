@@ -247,12 +247,51 @@ li{
     color: gold;
 }
 
+/****************FOOTER**************/
 
-/* ***************Error*************/
-.Error{
-    border: #000000 ;
-    background-color: #000000;
+footer{
+    background-color:rgba(23, 56, 153);
+    height: 15rem;
+    
+}
+
+.footerContainer{
+    /* border: #000000  solid; */
+    width: 95%;
+    padding: 8px;
+}
+
+.socialIcons{
     display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.footerNav{
+   /* border: #000000 solid; */
+   margin: 30px;
+   
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.footerBottom{
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
     text-align: center;
-    justify-content:end
 }
