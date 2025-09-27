@@ -2,9 +2,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Its a free CDN that contains all stars icons etc -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+    
 </head>
 <body>
-    Cargo
+    <!-- -------NAV Bar ----- -->
+    <header class="container">
+            <a href="../../index.html"><img class="logo" src="../../Assets/handshake-icon-clip-art-handshake-transparent-png-clip-art-image--6094582777380864_preview_rev_1.png"></a>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Categories.html">Catégories</a></li>
+                <li><a href="../../About.html">À propos</a></li>
+                <li><a href="../../Support.html">Support</a></li>
+                <li><a href="../../Carte.html">Panier</a></li>
+            </ul>
+            <div class="right">
+    </header>   
+  
+
+  <!-- Détail produit -->
+  <main class="product-detail">
+    <!-- Images -->
+    <div class="product-images">
+      <img src="../../categories/Assets/cargopants 1.jpg" alt="cargo face avant" class="main-image">
+      <div class="thumbnail-list">
+        <img src="../../categories/Assets/cargopants 1.jpg" alt="cargo vue avant">
+        <img src="../../categories/Assets/cargopants 1.jpg" alt="cargo vue arrière">
+      </div>
+    </div>
+
+    <!-- Infos produit -->
+    <div class="detail-info">
+      <h1>Hoodie Premium</h1>
+      <p class="price">100.00£</p>
+
+      <p class="description">
+        Ce hoodie premium est parfait pour l’hiver. Fabriqué en coton bio mélangé à du polyester recyclé, 
+        il vous apporte confort et chaleur tout en respectant l’environnement.
+      </p>
+
+      <!-- Caractéristiques -->
+      <ul class="features">
+        <li>Matière : 80% coton bio, 20% polyester recyclé</li>
+        <li>Disponible en plusieurs tailles (S, M, L, XL)</li>
+        <li>Couleurs : Noir, Gris, Bleu</li>
+        <li>Capuche ajustable et poche kangourou</li>
+      </ul>
+
+      <!-- Sélecteur quantité -->
+      <label for="quantity">Quantité :</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+      <!-- Bouton panier -->
+      <button class="btn btn-primary">
+        <i class="fa fa-cart-plus"></i> Ajouter au panier
+      </button>
+    </div>
+  </main>
+
+  <!-- Produits similaires -->
+  <section class="related-products">
+    <h2>Produits similaires</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <a href="../../categories/cloth/hoodie1Details.html">
+          <img src="../../Assets/Hoodie2.jpg" alt="Hoodie">
+          <h3>Hoodie</h3>
+          <p class="price">50.00£</p>
+        </a>
+      </div>
+      <div class="product-card">
+        <a href="../../categories/cloth/jeansDetails.html">
+          <img src="../../Assets/geans1.jpg" alt="Jeans">
+          <h3>hoodie</h3>
+          <p class="price">150.00£</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+   <!-------------------------FOOTER------------------->
+      <footer>
+        <div class="footerContainer">
+          <div class="socialIcons">
+            <a href="pageError.html"><i class="fab fa-facebook"></i></a>
+            <a href="pageError.html"><i class="fab fa-instagram"></i></a>
+            <a href="pageError.html"><i class="fab fa-twitter"></i></a>
+            <a href="pageError.html"><i class="fab fa-google-plus"></i></a>
+            <a href="pageError.html"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="footerNav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="produits.html">Produits</a></li>
+              <li><a href="">categories</a></li>
+              <li><a href="Contact.html">Contact Us</a></li>
+              <li><a href="About.html">Our Team</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerBottom">
+            <p class="copyrightText">Copyright &copy;2025; Designed by  <span> Gaisie studios</span></p>
+          </div>
+      </footer>  
 </body>
 </html>
