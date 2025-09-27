@@ -9,191 +9,142 @@
 </head>
 
 <body>
-    <header class="container">
-            <a href="#"><img class="logo" src="Assets/handshake-icon-clip-art-handshake-transparent-png-clip-art-image--6094582777380864_preview_rev_1.png"></a>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../Categories.html">Catégories</a></li>
-                <li><a href="../../About.html">À propos</a></li>
-                <li><a href="../../Support.html">Support</a></li>
-                <li><a href="../../Carte.html">Panier</a></li>
-            </ul>
-            <div class="right">
-    </header>
+    <header>
+    <!-- Logo -->
+    <a href="index.html">
+      <img class="logo" src="../../Assets/handshake-icon.png" alt="Logo">
+    </a>
 
- <!--------------------------------------Produits mises en avant------------------------------->
-       
-        <div id="Produits_en_avant">
-          <div class="produits_content">
-            <!-------------Product IMAGE------------>
-            <img src="../Assets/kentle 1.webp" class="product_picture">
-            <!-------------Product NAME------------->
-            <h3 class="product_name">Kettle</h3>
-            <!----------Product Discription--------->
-            <p class="discription"> Lorem ipsum dolor sit amet is a hoodie foer cold weather condition</p>
-            <!-------------Product Price------------>
-            <h6>100.00£</h6>
-            <!------------Product Rating------------->
-            <ul>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <button class="btn btn-primary"> buy now</button>
+    <!-- Menu -->
+    <ul class="nav-links">
+      <li><a href="../../index.html" style="color: rgba(23, 56, 153); font-weight: bold;">Accueil</a></li>
+      <li><a href="../../Categories.html">Catégories</a></li>
+      <li><a href="../../About.html">À propos</a></li>
+      <li><a href="../../Support.html">Support</a></li>
+    </ul>
+
+    <!-- Cart -->
+    <a href="Carte.html" class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+    </a>
+  </header>
+
+ <!--------------------------------------Produits mises en avant-------------------------------> 
+     <section id="featured_products">
+      <h3>Produit qui pourrait vous intéresser…</h3>
+      <div class="products_grid">
+
+        <div class="product_card">
+          <a href="../cloth/hoddie2Details.html">
+          <img src="../Assets/kentle 1.webp" alt="Hoodie" class="product_img">
+          <h4 class="product_name">Hoodie</h4>
+          <p class="product_description">Un hoodie confortable pour toutes les saisons.</p>
+          <div class="price_button">
+            <span class="price">100.00€</span></a>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i>
+            </button>
           </div>
+          </a>
+        </div>
 
-            <!---------------- SECOND PRODUCTS CONTENT-------------->
-
-          <div class="produits_content">
-            <!-------------Product IMAGE------------>
-            <img src="../Assets/kentle2.jpeg" class="product_picture">
-            <!-------------Product NAME------------->
-            <h3 class="product_name">Kettle</h3>
-            <!----------Product Discription--------->
-            <p class="discription"> Lorem ipsum dolor sit amet is a Jollof Rice foer cold weather condition</p>
-            <!-------------Product Price------------>
-            <h6>100.00£</h6>
-            <!------------Product Rating------------->
-            <ul>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <button class="btn btn-primary"> buy now</button>
-          </div>
-
-
-           <!---------------- THIRD PRODUCTS CONTENT-------------->
-
-          <div class="produits_content">
-            <!-------------Product IMAGE------------>
-            <img src="../Assets/coffe marchine 1.jpg" class="product_picture">
-            <!-------------Product NAME------------->
-            <h3 class="product_name">Microwave</h3>
-            <!----------Product Discription--------->
-            <p class="discription"> Lorem ipsum dolor sit amet is a Jollof Rice foer cold weather condition</p>
-            <!-------------Product Price------------>
-            <h6>100.00£</h6>
-            <!------------Product Rating------------->
-            <ul>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <button class="btn btn-primary"> buy now</button>
-          </div>
-
-
-             <!---------------- FOURTH PRODUCTS CONTENT-------------->
-
-          <div class="produits_content">
-            <!-------------Product IMAGE------------>
-            <img src="../Assets/kettle2.jpg" class="product_picture">
-            <!-------------Product NAME------------->
-            <h3 class="product_name">Jeans</h3>
-            <!----------Product Discription--------->
-            <p class="discription"> Lorem ipsum dolor sit amet is a Jollof Rice foer cold weather condition</p>
-            <!-------------Product Price------------>
-            <h6>100.00£</h6>
-            <!------------Product Rating------------->
-            <ul>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <button class="btn btn-primary"> buy now</button>
-          </div>
-
-
-           <!---------------- FIFTH PRODUCTS CONTENT-------------->
-
-          <div class="produits_content">
-            <!-------------Product IMAGE------------>
-            <img src="../Assets/washingmachine 1.jpg" class="product_picture">
-            <!-------------Product NAME------------->
-            <h3 class="product_name">Jeans</h3>
-            <!----------Product Discription--------->
-            <p class="discription"> Lorem ipsum dolor sit amet is a Jollof Rice foer cold weather condition</p>
-            <!-------------Product Price------------>
-            <h6>100.00£</h6>
-            <!------------Product Rating------------->
-            <ul>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <button class="btn btn-primary"> buy now</button>
-          </div>
-
-
-           <!---------------- SIXTH PRODUCTS CONTENT-------------->
-
-          <div class="produits_content">
-            <!-------------Product IMAGE------------>
-            <img src="../Assets/washing 2 in 1.jpg" class="product_picture">
-            <!-------------Product NAME------------->
-            <h3 class="product_name">Robe Rouge</h3>
-            <!----------Product Discription--------->
-            <p class="discription"> Lorem ipsum dolor sit amet is a Jollof Rice foer cold weather condition</p>
-            <!-------------Product Price------------>
-            <h6>100.00£</h6>
-            <!------------Product Rating------------->
-            <ul>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <button class="btn btn-primary"> buy now</button>
-          </div>
-          
-          <!---------------- SEVENTH PRODUCTS CONTENT-------------->
-
-          <div class="produits_content">
-            <!-------------Product IMAGE------------>
-            <img src="../Assets/toaster1.jpg" class="product_picture">
-            <!-------------Product NAME------------->
-            <h3 class="product_name">Jeans</h3>
-            <!----------Product Discription--------->
-            <p class="discription"> Lorem ipsum dolor sit amet is a Jollof Rice foer cold weather condition</p>
-            <!-------------Product Price------------>
-            <h6>100.00£</h6>
-            <!------------Product Rating------------->
-            <ul>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <button class="btn btn-primary"> buy now</button>
-          </div>
-          
-          <!---------------- EIGHTH PRODUCTS CONTENT-------------->
-
-          <div class="produits_content">
-            <!-------------Product IMAGE------------>
-            <img src="../Assets/toaster2.jpeg" class="product_picture">
-            <!-------------Product NAME------------->
-            <h3 class="product_name">Jeans</h3>
-            <!----------Product Discription--------->
-            <p class="discription"> Lorem ipsum dolor sit amet is a Jollof Rice foer cold weather condition</p>
-            <!-------------Product Price------------>
-            <h6>100.00£</h6>
-            <!------------Product Rating------------->
-            <ul>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <button class="btn btn-primary"> buy now</button>
+          <!---------------- SECOND PRODUCTS CONTENT-------------->
+        <div class="product_card">
+          <a href="../cloth/hoddie3Details.html">
+          <img src="../Assets/kentle2.jpeg" alt="kentle2" class="product_img">
+          <h4 class="product_name">kentle</h4>
+          <p class="product_description">Un délicieux plat traditionnel africain.</p>
+          <div class="price_button">
+            <span class="price">100.00€</span></a>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i>
+            </button>
           </div>
         </div>
+            <!---------------- THIRD PRODUCTS CONTENT-------------->
+        <div class="product_card">
+          <a href="3in1Details.html">
+          <img src="../Assets/coffe marchine 1.jpg" alt="coffee machine" class="product_img">
+          <h4 class="product_name">coffee machine</h4>
+          <p class="product_description">Un micro-ondes pratique pour votre cuisine.</p>
+          <div class="price_button">
+            <span class="price">100.00€</span></a>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i>
+            </button>
+          </div>
+        </div>
+          <!---------------- FOURTH PRODUCTS CONTENT-------------->
+        <div class="product_card">
+          <a href="../cloth/4setsDetails.html">
+          <img src="../Assets/kettle2.jpg" alt="Machine" class="product_img">
+          <h4 class="product_name">coffee machine</h4>
+          <p class="product_description">Un jean confortable et élégant pour tous les jours.</p>
+          <div class="price_button">
+            <span class="price">100.00€</span></a>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i>
+            </button>
+          </div>
+        </div>
+          <!---------------- FIFTH PRODUCTS CONTENT-------------->
+        <div class="product_card">
+          <a href="../cloth/cargoDetails.html">
+          <img src="../Assets/washingmachine 1.jpg" alt="washingmachine" class="product_img">
+          <h4 class="product_name">washing machine</h4>
+          <p class="product_description">Un jean confortable et élégant pour tous les jours.</p>
+          <div class="price_button">
+            <span class="price">100.00€</span></a>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i>
+            </button>
+          </div>
+        </div>
+            <!---------------- SIXTH PRODUCTS CONTENT-------------->
+        <div class="product_card">
+          <a href="../cloth/robe.html">
+          <img src="../Assets/washing 2 in 1.jpg" alt="washingmachine" class="product_img">
+          <h4 class="product_name">Washing machine</h4>
+          <p class="product_description">Un jean confortable et élégant pour tous les jours.</p>
+          <div class="price_button">
+            <span class="price">100.00€</span></a>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i>
+            </button>
+          </div>
+        </div>
+          <!---------------- SEVENTH PRODUCTS CONTENT-------------->
+        <div class="product_card">
+          <a href="../cloth/robe2.html">
+          <img src="../Assets/toaster1.jpg" alt="Oil" class="product_img">
+          <h4 class="product_name">toaster</h4>
+          <p class="product_description">Un jean confortable et élégant pour tous les jours.</p>
+          <div class="price_button">
+            <span class="price">100.00€</span></a>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i>
+            </button>
+          </div>
+        </div>
+
+         <!---------------- EIGHTH PRODUCTS CONTENT-------------->
+        <div class="product_card">
+          <a href="../cloth/robe3.html">
+          <img src="../Assets/toaster2.jpeg" alt="Onions" class="product_img">
+          <h4 class="product_name">Onions</h4>
+          <p class="product_description">Un jean confortable et élégant pour tous les jours.</p>
+          <div class="price_button">
+            <span class="price">100.00€</span></a>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
 
         <!-------------------------FOOTER------------------->
       <footer>
