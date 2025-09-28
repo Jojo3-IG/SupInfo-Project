@@ -10,19 +10,25 @@
     
 </head>
 <body>
-    <!-- -------NAV Bar ----- -->
-    <header class="container">
-            <a href="../../index.html"><img class="logo" src="../../Assets/handshake-icon-clip-art-handshake-transparent-png-clip-art-image--6094582777380864_preview_rev_1.png"></a>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../Categories.html">Catégories</a></li>
-                <li><a href="../../About.html">À propos</a></li>
-                <li><a href="../../Contact.html">Contact</a></li>
-                <li><a href="../../Cart.html">Panier</a></li>
-            </ul>
-            <div class="right">
-    </header>   
-  
+   <header>
+    <!-- Logo -->
+    <a href="index.html">
+      <img class="logo" src="../../Assets/handshake-icon.png" alt="Logo">
+    </a>
+
+    <!-- Menu -->
+    <ul class="nav-links">
+      <li><a href="../../index.html">Accueil</a></li>
+      <li><a href="../../Categories.html" style="color: rgba(23, 56, 153); font-weight: bold;">Catégories</a></li>
+      <li><a href="../../About.html">À propos</a></li>
+      <li><a href="../../Support.html">Support</a></li>
+    </ul>
+
+    <!-- Cart -->
+    <a href="Carte.html" class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+    </a>
+  </header>
 
   <!-- Détail produit -->
   <main class="product-detail">
@@ -30,6 +36,8 @@
     <div class="product-images">
       <img src="../../categories/Assets/Hoodie 3.webp" alt="Hoodie face avant" class="main-image">
       <div class="thumbnail-list">
+        <img src="../../categories/Assets/Hoodie 3.webp" alt="Hoodie vue avant">
+        <img src="../../categories/Assets/Hoodie 3.webp" alt="Hoodie vue arrière">
         <img src="../../categories/Assets/Hoodie 3.webp" alt="Hoodie vue avant">
         <img src="../../categories/Assets/Hoodie 3.webp" alt="Hoodie vue arrière">
       </div>
@@ -68,20 +76,29 @@
   <section class="related-products">
     <h2>Produits similaires</h2>
     <div class="product-grid">
-      <div class="product-card">
-        <a href="../../categories/cloth/jeansDetails.html">
-          <img src="../../Assets/geans1.jpg" alt="Hoodie">
-          <h3>Hoodie</h3>
-          <p class="price">50.00£</p>
-        </a>
-      </div>
-      <div class="product-card">
-        <a href="../../categories/cloth/cargoDetails.html">
-          <img src="../../categories/Assets/cargopants 1.jpg" alt="Veste">
-          <h3>hoodie</h3>
-          <p class="price">150.00£</p>
-        </a>
-      </div>
+     <div class="product_card">
+          <img src="/Assets/geans1.jpg" alt="Jeans" class="product_img">
+          <h4 class="product_name">Jeans</h4>
+          <p class="product_description">Un jean confortable et élégant pour tous les jours.</p>
+          <div class="price_button">
+            <span class="price">15.00€</span>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i>
+            </button>
+          </div>
+        </div>
+      <div class="product_card">
+          <a href="../cloth/cargoDetails.html">
+          <img src="../Assets/cargopants 1.jpg" alt="Jeans" class="product_img">
+          <h4 class="product_name">Cargo Pants</h4>
+          <p class="product_description">Un jean confortable et élégant pour tous les jours.</p>
+          <div class="price_button">
+            <span class="price">100.00€</span></a>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i>
+            </button>
+          </div>
+        </div>
     </div>
   </section>
 
