@@ -1,26 +1,112 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carte</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La main qui donne</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./CSS/cart.css">
+  <!-- Its a free CDN that contains all stars icons etc -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <header class="container">
-            <a href="#"><img class="logo" src="Assets/handshake-icon-clip-art-handshake-transparent-png-clip-art-image--6094582777380864_preview_rev_1.png"></a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portifolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="right">
-            <a href="#">sign in</a>
-            <a href="#"class="btn btn-primary">resgister</a>
-    </header>  
+  <header>
+    <!-- Logo -->
+    <a href="index.html">
+      <img class="logo" src="Assets/handshake-icon.png" alt="Logo">
+    </a>
 
-    <p>Carte page</p>
+    <!-- Menu -->
+    <ul class="nav-links">
+      <li><a href="index.html" style="color: rgba(23, 56, 153); font-weight: bold;">Accueil</a></li>
+      <li><a href="Categories.html">Catégories</a></li>
+      <li><a href="About.html">À propos</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Cart -->
+    <a href="Cart.html" class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+    </a>
+  </header>
+
+<main>
+  <section class="cart-section">
+    <div class="container">
+      <h2>Votre Panier</h2>
+
+      <!-- Liste des produits -->
+      <div class="cart-items">
+        <div class="cart-item">
+          <img src="./Assets/jollof 2.webp" alt="Produit 1">
+          <div class="item-info">
+            <h3>Produit 1</h3>
+            <p>Prix : 25 €</p>
+          </div>
+          <button class="remove-btn">✖</button>
+        </div>
+
+        <div class="cart-item">
+          <img src="./Assets/Microwave2.png" alt="Produit 2">
+          <div class="item-info">
+            <h3>Produit 2</h3>
+            <p>Prix : 40 €</p>
+          </div>
+          <button class="remove-btn">✖</button>
+        </div>
+      </div>
+
+      <!-- Résumé du panier -->
+      <div class="cart-summary">
+        <h3>Total : <span>65 €</span></h3>
+        <button class="checkout-btn">Commander</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+  
+  <!-------------------------FOOTER------------------->
+  <footer>
+    <div class="footerContainer">
+      <!-- Réseaux sociaux -->
+      <div class="socialIcons">
+        <a href="pageError.html"><i class="fab fa-facebook"></i></a>
+        <a href="pageError.html"><i class="fab fa-instagram"></i></a>
+        <a href="pageError.html"><i class="fab fa-twitter"></i></a>
+        <a href="pageError.html"><i class="fab fa-google-plus"></i></a>
+        <a href="pageError.html"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <!-- Navigation -->
+      <div class="footerNav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="produits.html">Produits</a></li>
+          <li><a href="#">Catégories</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="About.html">Notre équipe</a></li>
+        </ul>
+      </div>
+
+      <!-- Informations légales -->
+      <div class="footerLegal">
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+          <li><a href="cgu.html">Conditions générales d’utilisation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bas du footer -->
+    <div class="footerBottom">
+      <p class="copyrightText">
+        &copy; 2025 - Tous droits réservés | Conçu et développé par
+        <span>Gaisie Studio</span>
+      </p>
+    </div>
+  </footer>
 </body>
-</html>      
-
-    
+</html>
