@@ -11,18 +11,25 @@
 </head>
 <body>
     <!-- -------NAV Bar ----- -->
-    <header class="container">
-            <a href="../../index.html"><img class="logo" src="../../Assets/handshake-icon-clip-art-handshake-transparent-png-clip-art-image--6094582777380864_preview_rev_1.png"></a>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../Categories.html">Catégories</a></li>
-                <li><a href="../../About.html">À propos</a></li>
-                <li><a href="../../Contact.html">Contact</a></li>
-                <li><a href="../../Cart.html">Panier</a></li>
-            </ul>
-            <div class="right">
-    </header>   
-  
+  <header>
+    <!-- Logo -->
+    <a href="index.html">
+      <img class="logo" src="/Assets/handshake-icon.png" alt="Logo">
+    </a>
+
+    <!-- Menu -->
+    <ul class="nav-links">
+      <li><a href="index.html" style="color: rgba(23, 56, 153); font-weight: bold;">Accueil</a></li>
+      <li><a href="Categories.html">Catégories</a></li>
+      <li><a href="About.html">À propos</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Cart -->
+    <a href="Carte.html" class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+    </a>
+  </header>
 
   <!-- Détail produit -->
   <main class="product-detail">
@@ -68,21 +75,32 @@
   <section class="related-products">
     <h2>Produits similaires</h2>
     <div class="product-grid">
-      <div class="product-card">
-        <a href="../../categories/cloth/hoddie3Details.html">
-          <img src="../../categories/Assets/Hoodie 3.webp" alt="Hoodie">
-          <h3>Hoodie</h3>
-          <p class="price">50.00£</p>
-        </a>
-      </div>
-      <div class="product-card">
-        <a href="../../categories/cloth/hoddie2Details.html">
-          <img src="../Assets/Hoodie 2.webp" alt="Veste">
-          <h3>hoodie</h3>
-          <p class="price">150.00£</p>
-        </a>
-      </div>
-    </div>
+       <div class="product_card">
+        <a href="/categories/cloth/hoddie2Details.html">
+          <img src="/categories/Assets/Hoodie 2.webp" alt="Hoodie" class="product_img">
+          <h4 class="product_name">Hoodie</h4>
+          <p class="product_description">Un hoodie confortable pour toutes les saisons.</p>
+          <div class="price_button">
+            <span class="price">10.00€</span></a>
+            <a href="Cart.html" class="btn"> <i class="fas fa-shopping-cart cart_icon"></i>
+            </a>
+
+          </div>
+          </a>
+        </div>
+     <div class="product_card">
+      <a href="/categories/cloth/hoddie3Details.html">
+          <img src="/categories/Assets/Hoodie 3.webp" alt="Hoodie" class="product_img">
+          <h4 class="product_name">Hoodie</h4>
+          <p class="product_description">Un hoodie confortable pour toutes les saisons.</p>
+          <div class="price_button">
+            <span class="price">10.00€</span></a>
+            <a href="Cart.html" class="btn"> <i class="fas fa-shopping-cart cart_icon"></i>
+            </a>
+
+          </div>
+          </a>
+        </div>
   </section>
 
    <!-------------------------FOOTER------------------->

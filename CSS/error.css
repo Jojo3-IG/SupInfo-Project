@@ -1,0 +1,47 @@
+/* PAGE 404 SIMPLE AVEC DÉGRADÉ */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  /* Dégradé de fond */
+  background: linear-gradient(135deg, #f35f5f, #8f94fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.error-page {
+  text-align: center;
+}
+
+.error-page h1 {
+  font-size: 96px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.error-page h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.error-page p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .error-page h1 {
+    font-size: 72px;
+  }
+  .error-page h2 {
+    font-size: 24px;
+  }
+  .error-page p {
+    font-size: 16px;
+  }
+}
