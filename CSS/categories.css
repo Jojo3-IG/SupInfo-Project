@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration:none;
-    list-style: none;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
-body{
-  font-family: montserrat,sans-serif;
+body {
+  font-family: montserrat, sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -51,7 +51,7 @@ header {
   padding: 0 1.5rem;
   position: fixed;
   background: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   z-index: 9999;
 }
 
@@ -77,84 +77,89 @@ header {
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin-left: 1rem; 
+  margin-left: 1rem;
 }
 
 .cart-icon:hover {
   color: rgba(23, 56, 153);
 }
 
-a{
-    color:black;
-    transition: all 300ms ease;
+a {
+  color: black;
+  transition: all 300ms ease;
 }
 
-a:hover{
-    color: rgba(23, 56, 153);
+a:hover {
+  color: rgba(23, 56, 153);
 }
 
 /* --------------------Hero Styling------------------------ */
-.hero{
-    min-height: 100vh;
-    background-image: url(./Assets/photo-la-main-qui-donne.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero {
+  min-height: 100vh;
+  background-image: url(./Assets/photo-la-main-qui-donne.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.content{
-    text-align: center;
-    color:#fff
+.content {
+  text-align: center;
+  color: #fff
 }
 
-.content h1{
-    font-size: 65px;
-    margin-bottom: 20px;
+.content h1 {
+  font-size: 65px;
+  margin-bottom: 20px;
 }
 
-.content p{
-    font-size: 22px;
-    margin-bottom:30px ;
+.content p {
+  font-size: 22px;
+  margin-bottom: 30px;
 }
 
 /* ************************CATEGORIES***************** */
-
-.categories{
-    width:full;
-    height: 200px;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.categories {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  justify-content: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.categories a{
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9999px;
-    color:rgb(255, 255, 255);
-    font-size: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+.categories a {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
 }
 
-.categories a::before{
-    content: "";
-    position:relative;
-    background-color: rgba(0,0,0,0.4);
-     z-index: 1 ;
-     inset: 0;
-     border-radius: 12px;
-} 
-
-.categories a:hover{
-    box-shadow: 0rem 1rem 1rem rgb(78, 84, 102)
+.categories a::before {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  border-radius: 9999px;
 }
+
+.categories a:hover {
+  box-shadow: 0 1rem 1rem rgb(78, 84, 102);
+}
+
 
 /* ************************PRODUCTS***************** */
 
@@ -167,7 +172,7 @@ a:hover{
 
 #featured_products h3 {
   text-align: center;
-  margin-top: 4rem ;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -183,7 +188,7 @@ a:hover{
 .product_card {
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   text-align: left;
   padding: 1.5rem;
   display: flex;
@@ -193,7 +198,7 @@ a:hover{
 
 .product_card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 /* IMAGE */
@@ -222,7 +227,8 @@ a:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: auto; /* pousse le bouton en bas si les cartes sont de tailles différentes */
+  margin-top: auto;
+  /* pousse le bouton en bas si les cartes sont de tailles différentes */
 }
 
 /* PRICE */
@@ -233,7 +239,6 @@ a:hover{
 
 
 /****************FOOTER**************/
-
 footer {
   background-color: #111;
   color: #f1f1f1;
@@ -253,6 +258,7 @@ footer {
 .socialIcons {
   margin-bottom: 20px;
 }
+
 .socialIcons a {
   display: inline-block;
   margin: 0 8px;
@@ -263,6 +269,7 @@ footer {
   border-radius: 50%;
   transition: all 0.3s ease;
 }
+
 .socialIcons a:hover {
   background: #f1f1f1;
   color: #111;
@@ -278,15 +285,18 @@ footer {
   justify-content: center;
   margin: 10px 0;
 }
+
 .footerNav ul li,
 .footerLegal ul li {
   margin: 0 15px;
 }
+
 .footerNav ul li a,
 .footerLegal ul li a {
   color: #f1f1f1;
   transition: color 0.3s ease;
 }
+
 .footerNav ul li a:hover,
 .footerLegal ul li a:hover {
   color: #ffcc00;
@@ -299,24 +309,29 @@ footer {
   padding-top: 15px;
   text-align: center;
 }
+
 .footerBottom p {
   margin: 5px 0;
   font-size: 14px;
 }
+
 .footerBottom a {
   color: #ffcc00;
 }
+
 .footerBottom a:hover {
   text-decoration: underline;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+
   .footerNav ul,
   .footerLegal ul {
     flex-direction: column;
     align-items: center;
   }
+
   .footerNav ul li,
   .footerLegal ul li {
     margin: 8px 0;
@@ -425,6 +440,6 @@ footer {
 
 
 /* error page */
-.error{
-    text-align: center;
+.error {
+  text-align: center;
 }

@@ -1,0 +1,43 @@
+/* Section contact */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: white;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.contact-section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.contact-section a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-section textarea,
+.contact-section input[type="text"] {
+  width: 100%;
+  max-width: 700px;
+  min-height: 300px;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 0 auto 15px;
+  display: block;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .contact-section textarea,
+  .contact-section input[type="text"] {
+    max-width: 100%;
+  }
+}
