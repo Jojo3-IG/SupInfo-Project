@@ -3,10 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../style.css">
+    <!-- <link rel="stylesheet" href="../../style.css"> -->
+     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-     <header>
+      <header>
     <!-- Logo -->
     <a href="index.html">
       <img class="logo" src="../../Assets/handshake-icon.png" alt="Logo">
@@ -14,8 +15,8 @@
 
     <!-- Menu -->
     <ul class="nav-links">
-      <li><a href="../../index.html" style="color: rgba(23, 56, 153); font-weight: bold;">Accueil</a></li>
-      <li><a href="../../Categories.html">Catégories</a></li>
+      <li><a href="../../index.html">Accueil</a></li>
+      <li><a href="../../Categories.html" style="color: rgba(23, 56, 153); font-weight: bold;">Catégories</a></li>
       <li><a href="../../About.html">À propos</a></li>
       <li><a href="../../Support.html">Support</a></li>
     </ul>
@@ -25,6 +26,105 @@
       <i class="fas fa-shopping-cart"></i>
     </a>
   </header>
-    <h2>Robe3</h2>
+<!-- Détail produit -->
+  <main class="product-detail">
+    <!-- Images -->
+    <div class="product-images">
+      <img src="/categories/Assets/robe 3.jpg" alt="Hoodie face avant" class="main-image">
+      <div class="thumbnail-list">
+        <img src="/categories/Assets/robe 3.jpg" alt="Hoodie vue avant">
+        <img src="/categories/Assets/robe 3.jpg" alt="Hoodie vue arrière">
+        <img src="/categories/Assets/robe 3.jpg" alt="Hoodie vue avant">
+        <img src="/categories/Assets/robe 3.jpg" alt="Hoodie vue arrière">
+      </div>
+    </div>
+
+    <!-- Infos produit -->
+    <div class="detail-info">
+      <h1>Hoodie Premium</h1>
+      <p class="price">100.00£</p>
+
+      <p class="description">
+        Ce hoodie premium est parfait pour l’hiver. Fabriqué en coton bio mélangé à du polyester recyclé, 
+        il vous apporte confort et chaleur tout en respectant l’environnement.
+      </p>
+
+      <!-- Caractéristiques -->
+      <ul class="features">
+        <li>Matière : 80% coton bio, 20% polyester recyclé</li>
+        <li>Disponible en plusieurs tailles (S, M, L, XL)</li>
+        <li>Couleurs : Noir, Gris, Bleu</li>
+        <li>Capuche ajustable et poche kangourou</li>
+      </ul>
+
+      <!-- Sélecteur quantité -->
+      <label for="quantity">Quantité :</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+      <!-- Bouton panier -->
+      <button class="btn btn-primary">
+        <i class="fa fa-cart-plus"></i> Ajouter au panier
+      </button>
+    </div>
+  </main>
+
+  <!-- Produits similaires -->
+  <section class="related-products">
+    <h2>Produits similaires</h2>
+    <div class="product-grid">
+     <div class="product_card">
+      <a href="/categories/cloth/robe1Details.html">
+          <img src="/categories/Assets/robe.webp" alt="Jeans" class="product_img">
+          <h4 class="product_name">Robe</h4>
+          <p class="product_description">Un jean confortable et élégant pour tous les jours.</p>
+          <div class="price_button">
+            <span class="price">15.00€</span>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i></a>
+            </button>
+          </div>
+        </div>
+      <div class="product_card">
+          <a href="/categories/cloth/robe2Details.html">
+          <img src="../../categories/Assets/Robe 2.webp" alt="Jeans" class="product_img">
+          <h4 class="product_name">Robe</h4>
+          <p class="product_description">Un jean confortable et élégant pour tous les jours.</p>
+          <div class="price_button">
+            <span class="price">100.00€</span></a>
+            <button class="button">
+              <i class="fas fa-shopping-cart cart_icon"></i>
+            </button>
+          </div>
+        </div>
+    </div>
+  </section>
+
+   <!-------------------------FOOTER------------------->
+      <footer>
+        <div class="footerContainer">
+          <div class="socialIcons">
+            <a href="pageError.html"><i class="fab fa-facebook"></i></a>
+            <a href="pageError.html"><i class="fab fa-instagram"></i></a>
+            <a href="pageError.html"><i class="fab fa-twitter"></i></a>
+            <a href="pageError.html"><i class="fab fa-google-plus"></i></a>
+            <a href="pageError.html"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="footerNav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="produits.html">Produits</a></li>
+              <li><a href="">categories</a></li>
+              <li><a href="Contact.html">Contact Us</a></li>
+              <li><a href="About.html">Our Team</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerBottom">
+            <p class="copyrightText">Copyright &copy;2025; Designed by  <span> Gaisie studios</span></p>
+          </div>
+      </footer>  
+</body>
+</html>
+
 </body>
 </html>
